@@ -27,11 +27,10 @@ namespace transpose
 
             bool bBlockGroups = false;
             int iBlockSize = 0;
-            if (args[2] != "")
+            if (args.Length == 3)
             {
                 bBlockGroups = true;
-                iBlockSize = Convert.ToInt32(args[2]);
-                    
+                iBlockSize = Convert.ToInt32(args[2]);                    
             }
 
             if (!File.Exists(args[0]))
